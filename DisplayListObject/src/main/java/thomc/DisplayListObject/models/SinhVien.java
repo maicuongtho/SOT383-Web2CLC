@@ -15,6 +15,10 @@ public class SinhVien {
 	public void setHoVaTen(String hoVaTen) {
 		this.hoVaTen = hoVaTen;
 	}
+	
+	public SinhVien() {
+		super();
+	}
 	public SinhVien(String maSoSV, String hoVaTen) {
 		this.maSoSV = maSoSV;
 		this.hoVaTen = hoVaTen;
