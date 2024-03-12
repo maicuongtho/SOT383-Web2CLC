@@ -20,8 +20,8 @@ public class SinhVienController {
 		 }
 	//----------hết phần hard-code dữ liệu ---------------------	
 	@GetMapping("/danhsachSV")
-	public String listStudent(ModelMap model) {
-	    model.addAttribute("dsSV", dsSinhVien);
+	public String listStudent(ModelMap mm) {
+	    mm.addAttribute("dsSV", dsSinhVien);
 	    return "sinhvien_getAll";
 	}
 }

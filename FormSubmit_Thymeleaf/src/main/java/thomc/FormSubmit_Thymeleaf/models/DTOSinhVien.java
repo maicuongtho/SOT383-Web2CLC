@@ -1,6 +1,6 @@
 package thomc.FormSubmit_Thymeleaf.models;
 
-public class SinhVien {
+public class DTOSinhVien {
 	private String maSoSV;      // Mã số sinh viên
 	private String hoVaTen;     // Họ và Tên
 	public String getMaSoSV() {
@@ -15,12 +15,12 @@ public class SinhVien {
 	public void setHoVaTen(String hoVaTen) {
 		this.hoVaTen = hoVaTen;
 	}
-	public SinhVien(String maSoSV, String hoVaTen) {
+	public DTOSinhVien(String maSoSV, String hoVaTen) {
 		this.maSoSV = maSoSV;
 		this.hoVaTen = hoVaTen;
 	}
 
-	public SinhVien() {
+	public DTOSinhVien() {
 		super();
 	}
 	

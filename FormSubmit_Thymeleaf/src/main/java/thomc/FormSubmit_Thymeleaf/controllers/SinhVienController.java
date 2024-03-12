@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import thomc.FormSubmit_Thymeleaf.models.SinhVien;
+import thomc.FormSubmit_Thymeleaf.models.DTOSinhVien;
 
 @Controller
 public class SinhVienController {
 	@GetMapping("/themMoiSV")
-	public String showForm(Model model) {
-        SinhVien sinhvienNull = new SinhVien();
-        model.addAttribute("svDTO", sinhvienNull);
+	public String showForm(Model mm) {
+        DTOSinhVien sinhvienNull = new DTOSinhVien();
+        mm.addAttribute("svDTO", sinhvienNull);
         return "themSinhVien_form";
     }
 	@PostMapping("/themMoiSV")
-	public String submitForm(@ModelAttribute("svDTO") SinhVien sv) {
+	public String submitForm(@ModelAttribute("svDTO") DTOSinhVien sv) {
 	    return "themSinhVien_OK";
 	}
 	 
